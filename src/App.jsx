@@ -1,6 +1,6 @@
-import GreenString from "./components/GreenString"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Record from "./components/Record"
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       {/* <GreenString /> */}
       <Header />
       <Hero />
+      <Record />
     </main>
   )
 }

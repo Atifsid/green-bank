@@ -3,7 +3,7 @@ import logo from '/logo.svg';
 
 function Header() {
     return (
-        <header className='relative flex justify-center header pt-[32px]'>
+        <header className='sticky top-0 flex justify-center header py-[32px] z-50 bg-bg'>
             <div className='absolute right-[32%] top-[-280%] h-[400px] w-[400px] bg-primary rounded-full blur-[280px]'></div>
             <nav className='flex items-center justify-between w-6xl px-6'>
                 <div className="flex items-center cursor-pointer">

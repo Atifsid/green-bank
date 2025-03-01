@@ -1,15 +1,15 @@
 import React from 'react'
 import arrowRight from '/arrow-right.svg';
-import ProfileCircles from './ProfileCircles';
-import CreditCard from './CreditCard';
+import ProfileCircles from './ui/ProfileCircles';
+import HeroRight from './ui/HeroRight';
 
 function Hero() {
     return (
-        <section className='h-[calc(100vh-82px)]'>
+        <section className='h-[calc(100vh-114px)]'>
             <div className='flex justify-center h-full'>
                 <div className='flex items-center justify-center lg:justify-between w-6xl px-6 relative'>
-                    <div>
-                        <h1 className='ff-m-plus-1-bold text-white text-[50px]/16'>Discover the Perfect <br />
+                    <div className='z-10'>
+                        <h1 className='ff-m-plus-1-bold text-white text-[50px]/16 z-10'>Discover the Perfect <br />
                             <span>
                                 <div className="relative inline-block">
                                     Credit Card for
@@ -38,7 +38,7 @@ function Hero() {
                         </div>
                     </div>
 
-                    <CreditCard />
+                    <HeroRight />
                 </div>
             </div>
         </section>
