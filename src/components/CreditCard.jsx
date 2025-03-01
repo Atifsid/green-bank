@@ -6,7 +6,7 @@ import SegmentCircle from './SegmentCircle'
 
 function CreditCard() {
     return (
-        <div className='absolute right-0'>
+        <div className='absolute right-0 hidden lg:block'>
             <SegmentCircle />
 
             <div className='absolute top-[8%] right-[20%] h-[280px] w-[450px] rounded-4xl bg-white/20 backdrop-blur-lg transform rotate-15 shadow-lg py-6 px-8'>

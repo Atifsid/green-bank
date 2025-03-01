@@ -5,7 +5,7 @@ import Hero from "./components/Hero"
 function App() {
   return (
     <main className="relative">
-      <GreenString />
+      {/* <GreenString /> */}
       <Header />
       <Hero />
     </main>
