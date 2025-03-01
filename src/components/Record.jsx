@@ -14,7 +14,7 @@ function Record() {
       </div>
 
       <div className='mt-32'>
-        {/* <LogoSection /> */}
+        <LogoSection />
       </div>
     </section>
   )

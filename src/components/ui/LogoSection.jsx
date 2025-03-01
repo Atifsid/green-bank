@@ -12,7 +12,7 @@ function LogoSection() {
 
     return (
         <div className='flex justify-center'>
-            <div className='flex justify-center items-center gap-20'>
+            <div className='flex items-center gap-20'>
                 {[...images].map((img, i) => (
                     <img key={i} src={img} alt={`logo-${i}`} />
                 ))}
