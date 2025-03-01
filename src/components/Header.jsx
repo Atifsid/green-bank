@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className='relative flex justify-center header pt-[32px]'>
             <div className='absolute right-[32%] top-[-280%] h-[400px] w-[400px] bg-primary rounded-full blur-[280px]'></div>
-            <nav className='flex items-center justify-between w-5xl lg:px-0 px-6'>
+            <nav className='flex items-center justify-between w-6xl px-6'>
                 <div className="flex items-center cursor-pointer">
                     <img src={logo} alt="logo" height={24} width={24} />
                     <h1 className='pl-[12px] ff-m-plus-1-bold'>GreenBank</h1>

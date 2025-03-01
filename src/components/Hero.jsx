@@ -5,9 +5,9 @@ import CreditCard from './CreditCard';
 
 function Hero() {
     return (
-        <section className='h-[calc(100vh-82px)] mt-[50px] lg:mt-[128px]'>
-            <div className='flex justify-center'>
-                <div className='flex items-center justify-center lg:justify-between w-5xl lg:px-0 px-6 relative'>
+        <section className='h-[calc(100vh-82px)]'>
+            <div className='flex justify-center h-full'>
+                <div className='flex items-center justify-center lg:justify-between w-6xl px-6 relative'>
                     <div>
                         <h1 className='ff-m-plus-1-bold text-white text-[50px]/16'>Discover the Perfect <br />
                             <span>
