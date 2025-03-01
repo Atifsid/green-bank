@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+body {
+    background-color: var(--color-bg);
+    margin: 0 !important;
+}
+
+.header {
+    color: var(--color-white) !important;
+}
+
+.ff-m-plus-1-bold {
+    font-family: 'M PLUS 1 Bold', sans-serif;
+}
+
+.ff-m-plus-1-medium {
+    font-family: 'M PLUS 1 Medium', sans-serif;
+}
+
+.ff-m-plus-1-regular {
+    font-family: 'M PLUS 1 Regular', sans-serif;
+}
+
+.ff-m-plus-1-semibold {
+    font-family: 'M PLUS 1 SemiBold', sans-serif;
+}
+
+.ff-m-plus-1-code-bold {
+    font-family: 'M PLUS 1 Code Bold', sans-serif;
+}
+
+@layer utilities {
+    .clip-segment {
+        clip-path: ellipse(100% 70% at 50% 100%);
+    }
+}
