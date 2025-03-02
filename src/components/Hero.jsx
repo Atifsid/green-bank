@@ -2,6 +2,7 @@ import React from 'react'
 import arrowRight from '/arrow-right.svg';
 import ProfileCircles from './ui/ProfileCircles';
 import HeroRight from './ui/HeroRight';
+import Button from './ui/Button';
 
 function Hero() {
     return (
@@ -25,9 +26,7 @@ function Hero() {
                             Discover the power of our secure and rewarding credit <br />cards. Explore our range of credit cards and take control <br />of your finances today.
                         </p>
 
-                        <button className='flex items-center gap-4 bg-primary px-[32px] py-[16px] rounded-full cursor-pointer'>
-                            <span className='text-white'>Get Started</span> <img src={arrowRight} alt="arrowRight" />
-                        </button>
+                        <Button text={'Get Started'} icon={arrowRight} />
 
                         <div className='mt-[35px] flex items-center gap-4'>
                             <ProfileCircles />
