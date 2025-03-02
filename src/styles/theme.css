@@ -3,6 +3,7 @@
     --color-primary: #2BB32A;
     --color-white: #FFFFFF;
     --color-gray: #ADB2B1;
+    --color-container: #3D544D;
 }
 
 /* m-plus-1-latin-700-normal */
@@ -10,6 +11,7 @@
     font-family: 'M PLUS 1 Bold';
     font-style: normal;
     font-display: swap;
+    font-weight: 700;
     src: url(../fonts/m-plus-1_5.1.1_latin-700-normal.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -19,6 +21,7 @@
     font-family: 'M PLUS 1 Medium';
     font-style: normal;
     font-display: swap;
+    font-weight: 500;
     src: url(../fonts/m-plus-1_5.1.1_latin-500-normal.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -28,6 +31,7 @@
     font-family: 'M PLUS 1 Regular';
     font-style: normal;
     font-display: swap;
+    font-weight: 400;
     src: url(../fonts/m-plus-1_5.1.1_latin-400-normal.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
