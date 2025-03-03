@@ -6,10 +6,7 @@ import rakuten from '/rakuten.svg'
 import upwork from '/upwork.svg'
 import vice from '/vice.svg'
 
-const images = [upwork, petal, rakuten, nyt, vice, dell].map((src) => ({
-    id: crypto.randomUUID(),
-    src
-}));
+const images = [upwork, petal, rakuten, nyt, vice, dell];
 
 function LogoSection() {
     const logosRef = useRef(null);
@@ -31,7 +28,7 @@ function LogoSection() {
                 >
                     {images.map((image, index) => (
                         <li key={index}>
-                            <img src={image.src} alt={image.id} />
+                            <img src={image} alt={`logo-${index}`} />
                         </li>
                     ))}
                 </ul>
