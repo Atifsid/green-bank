@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Process from "./components/Process"
 import Record from "./components/Record"
 import Services from "./components/Services"
+import Testimonial from "./components/Testimonial"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Record />
       <Services />
       <Process />
+      <Testimonial />
     </main>
   )
 }
