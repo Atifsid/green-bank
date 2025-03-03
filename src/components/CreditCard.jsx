@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreditCard({ style, iconColor, labelClass, valueClass, isService }) {
+function CreditCard({ style, iconColor, labelClass, valueClass, isService, creditCardNumFontSize, nameAndExpFontSize, cardSignClass }) {
     return (
         <div className={`rounded-4xl py-6 px-8 ${style}`}>
             <div className='flex justify-between items-center'>
@@ -30,45 +30,44 @@ function CreditCard({ style, iconColor, labelClass, valueClass, isService }) {
 
                 {isService && <svg width="25" height="38" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M17.6497 0.834378C18.2423 0.400281 19.0921 0.540775 19.5476 1.14818C21.9734 4.38238 24.9247 9.89847 25.9479 16.0426C26.978 22.2287 26.0574 29.1346 20.5877 34.8763C20.0815 35.4077 19.2253 35.4133 18.6753 34.8889C18.1253 34.3645 18.0897 33.5086 18.5959 32.9772C23.3664 27.9695 24.2067 21.9717 23.278 16.3952C22.3424 10.7767 19.615 5.67122 17.4016 2.72018C16.946 2.11278 17.0571 1.26847 17.6497 0.834378ZM11.9598 5.79214C12.5518 5.35715 13.4017 5.49639 13.8581 6.10315C15.5702 8.37902 17.6481 12.2499 18.3697 16.5724C19.0984 20.9375 18.4475 25.845 14.5518 29.9212C14.0447 30.4518 13.1885 30.4561 12.6393 29.9308C12.09 29.4056 12.0559 28.5497 12.5629 28.0191C15.7574 24.6766 16.3265 20.6788 15.7 16.9261C15.0664 13.1307 13.2137 9.67122 11.7145 7.67841C11.2581 7.07165 11.3679 6.22714 11.9598 5.79214ZM7.63484 11.2031C8.2246 10.7652 9.075 10.9004 9.53426 11.5051C10.4687 12.7354 11.5954 14.8122 11.9886 17.1492C12.3894 19.5308 12.031 22.26 9.84961 24.5188C9.33981 25.0468 8.48338 25.0468 7.93671 24.5188C7.39004 23.9909 7.36015 23.135 7.86995 22.6071C9.34377 21.0809 9.61574 19.2666 9.31954 17.5064C9.01585 15.7016 8.11824 14.0384 7.39854 13.0908C6.93928 12.4861 7.04508 11.641 7.63484 11.2031ZM4.115 16.804C3.61698 16.804 3.22734 17.2075 3.24472 17.7052C3.2621 18.2029 3.67992 18.6064 4.17794 18.6064C4.67597 18.6064 5.0656 18.2029 5.04822 17.7052C5.03084 17.2075 4.61303 16.804 4.115 16.804ZM0.539473 17.7052C0.46995 15.7143 2.0285 14.1004 4.02059 14.1004C6.01268 14.1004 7.68395 15.7143 7.75347 17.7052C7.823 19.6961 6.26445 21.31 4.27236 21.31C2.28026 21.31 0.608996 19.6961 0.539473 17.7052Z" fill={iconColor} />
-                </svg>
-                }
+                </svg>}
 
             </div>
 
             <div className='mt-8'>
-                <h6 className={`ff-m-plus-1-semibold text-sm ${labelClass} pb-2`}>
+                <h6 className={`ff-m-plus-1-semibold ${labelClass} pb-2`}>
                     Credit Card No.
                 </h6>
 
-                <h6 className={`ff-m-plus-1-code-bold text-3xl ${valueClass}`}>
+                <h6 className={`ff-m-plus-1-code-bold ${creditCardNumFontSize} ${valueClass}`}>
                     1602  0911  2019  2021
                 </h6>
             </div>
 
             <div className='relative mt-8 flex items-center gap-12'>
                 <div>
-                    <h6 className={`ff-m-plus-1-semibold text-sm ${labelClass} pb-2`}>
+                    <h6 className={`ff-m-plus-1-semibold ${labelClass} pb-2`}>
                         Name
                     </h6>
 
-                    <h6 className={`ff-m-plus-1-medium text-[12px] ${valueClass}`}>
+                    <h6 className={`ff-m-plus-1-medium ${nameAndExpFontSize} ${valueClass}`}>
                         REHAN RAIHAN
                     </h6>
                 </div>
 
                 <div>
-                    <h6 className={`ff-m-plus-1-semibold text-sm ${labelClass} pb-2`}>
+                    <h6 className={`ff-m-plus-1-semibold ${labelClass} pb-2`}>
                         Exp.
                     </h6>
 
-                    <h6 className={`ff-m-plus-1-medium text-[12px] ${valueClass}`}>
+                    <h6 className={`ff-m-plus-1-medium ${nameAndExpFontSize} ${valueClass}`}>
                         09/11
                     </h6>
                 </div>
 
-                <div className='absolute right-0 bottom-[-15%]'>
+                <div className={`absolute right-0 bottom-[-15%]`}>
                     {/* cardSign */}
-                    <svg width="58" height="46" viewBox="0 0 59 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className={`${cardSignClass ? cardSignClass : 'h-[46px] w-[58px]'}`} viewBox="0 0 59 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.226196 2.47403C0.226196 1.5899 0.942928 0.873169 1.82706 0.873169H15.4344C16.3185 0.873169 17.0353 1.5899 17.0353 2.47403V12.6693C17.0353 13.2868 16.6802 13.8492 16.1227 14.1147L9.319 17.3545C8.88358 17.5618 8.37789 17.5618 7.94247 17.3545L1.1388 14.1147C0.58131 13.8492 0.226196 13.2868 0.226196 12.6693V2.47403Z" fill={iconColor} />
                         <path d="M25.84 2.47403C25.84 1.5899 26.5568 0.873169 27.4409 0.873169H31.4431C32.3272 0.873169 33.0439 1.5899 33.0439 2.47403V5.67576C33.0439 6.5599 32.3272 7.27663 31.4431 7.27663H27.4409C26.5568 7.27663 25.84 6.5599 25.84 5.67576V2.47403Z" fill={iconColor} />
                         <path d="M41.8487 2.47403C41.8487 1.5899 42.5654 0.873169 43.4495 0.873169H57.0569C57.941 0.873169 58.6578 1.5899 58.6578 2.47403V12.0792C58.6578 12.9634 57.941 13.6801 57.0569 13.6801H43.4495C42.5654 13.6801 41.8487 12.9634 41.8487 12.0792V2.47403Z" fill={iconColor} />
