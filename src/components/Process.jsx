@@ -21,9 +21,9 @@ function Process() {
                 </div>
 
                 <div className='flex justify-between items-center mt-32'>
-                    <div className='transform-3d flex flex-col'>
-                        <CreditCard iconColor={'white'} labelClass={'text-[#ffffff]'} valueClass={'text-white'} isService={true} style={'rotate-x-18 -rotate-z-1 rotate-y-8 h-[274px] w-[435px] bg-white/10 backdrop-blur-[12px] border-2 border-gray relative'} />
-                        <CreditCard iconColor={'#424242'} labelClass={'text-[#595959]'} valueClass={'text-[#424242]'} isService={true} style={'rotate-x-40 -rotate-z-8 rotate-y-22 h-[274px] w-[435px] bg-primary -mt-25 border-2 border-gray absolute top-75 right-5'} />
+                    <div className='transform-3d'>
+                        <CreditCard iconColor={'white'} labelClass={'text-[#ffffff]'} valueClass={'text-white'} isService={true} style={'rotate-x-18 -rotate-z-1 rotate-y-8 h-[274px] w-[435px] bg-white/10 backdrop-blur-[12px] border-2 border-gray'} />
+                        <CreditCard iconColor={'#424242'} labelClass={'text-[#595959]'} valueClass={'text-[#424242]'} isService={true} style={'rotate-x-40 -rotate-z-8 rotate-y-22 h-[274px] w-[435px] bg-primary -mt-25 border-2 border-gray -ml-5'} />
                     </div>
                     <div className='w-[50%]'>
                         <h6 className='ff-m-plus-1-bold text-white text-[40px]/14'>Find the Perfect Credit Card<br /> for You</h6>
