@@ -10,7 +10,7 @@ function Process() {
                 <div className='flex lg:flex-row flex-col justify-between items-center'>
                     <div className='w-[80%] lg:w-[50%] order-2 lg:order-1 lg:mt-8'>
                         <h6 className='ff-m-plus-1-bold text-white lg:text-[40px]/14 text-[30px]/10 text-center lg:text-left'>Design your personalized credit card.</h6>
-                        <h6 className='ff-m-plus-1-regular text-gray text-[16px]/5.5 mt-4 mb-6 text-center lg:text-left'>You have the freedom to personalize the design of your credit card, ensuring a truly unique experience that makes you feel extraordinary</h6>
+                        <h6 className='ff-m-plus-1-regular text-gray text-base/5.5 mt-4 mb-6 text-center lg:text-left'>You have the freedom to personalize the design of your credit card, ensuring a truly unique experience that makes you feel extraordinary</h6>
                         <div className='flex justify-center lg:justify-start'>
                             <Button text={'Create New Card'} icon={arrowRight} />
                         </div>
@@ -72,7 +72,7 @@ function Process() {
                     </div>
                     <div className='w-[80%] lg:w-[50%] lg:mt-8'>
                         <h6 className='ff-m-plus-1-bold text-white lg:text-[40px]/14 text-[30px]/10 text-center lg:text-left'>Find the Perfect Credit Card<br /> for You</h6>
-                        <h6 className='ff-m-plus-1-regular text-gray text-[16px]/5.5 mt-4 mb-6 text-center lg:text-left'>Discover your ideal credit card with ease. Our comprehensive selection caters to every financial need and lifestyle. Whether you seek cashback rewards, travel perks, or building credit, we have the perfect credit card waiting for you. Unleash the possibilities and find the credit card that fits your unique goals and aspirations.</h6>
+                        <h6 className='ff-m-plus-1-regular text-gray text-base/5.5 mt-4 mb-6 text-center lg:text-left'>Discover your ideal credit card with ease. Our comprehensive selection caters to every financial need and lifestyle. Whether you seek cashback rewards, travel perks, or building credit, we have the perfect credit card waiting for you. Unleash the possibilities and find the credit card that fits your unique goals and aspirations.</h6>
                         <div className='flex justify-center lg:justify-start'>
                             <Button text={'Learn More'} />
                         </div>

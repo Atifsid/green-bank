@@ -24,7 +24,7 @@ function IndividualRecord({ p1, p2 }) {
   return (
     <div className='flex flex-col gap-2'>
       <h6 className='ff-m-plus-1-bold text-5xl text-white text-center'>{p1}</h6>
-      <h6 className='ff-m-plus-1-medium text-[16px] text-primary text-center'>{p2}</h6>
+      <h6 className='ff-m-plus-1-medium text-base text-primary text-center'>{p2}</h6>
     </div>
   )
 }

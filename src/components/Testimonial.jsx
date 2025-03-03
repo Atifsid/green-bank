@@ -27,7 +27,7 @@ const testimonials = [
 function Testimonial() {
 
     return (
-        <section className='my-32 flex justify-center px-6 lg:px-2'>
+        <section className='mt-32 flex justify-center px-6 lg:px-2'>
             <div className='flex justify-between items-center gap-8 w-6xl'>
                 {testimonials.map((testimonial, i) => (
                     <TestimonialView
@@ -59,8 +59,8 @@ function TestimonialView({ text, username, work, avatar }) {
             <div className='flex items-center gap-2'>
                 <img src={avatar} alt="User 1" className="w-12 h-12 object-cover" />
                 <div>
-                    <h6 className='ff-m-plus-1-medium text-white text-[16px]'>{username}</h6>
-                    <h6 className='ff-m-plus-1-regular text-[#ADB2B1] text-[12px]'>{work}</h6>
+                    <h6 className='ff-m-plus-1-medium text-white text-base'>{username}</h6>
+                    <h6 className='ff-m-plus-1-regular text-gray text-[12px]'>{work}</h6>
                 </div>
             </div>
         </div>

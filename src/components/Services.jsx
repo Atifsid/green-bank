@@ -26,7 +26,7 @@ function Service({ icon, alt, heading }) {
             </div>
             <div className='text-white'>
                 <h6 className='ff-m-plus-1-medium text-[24px]'>{heading}</h6>
-                <h6 className='ff-m-plus-1-regular text-gray text-[16px]/5.5'>Your data and funds will be securely protected.</h6>
+                <h6 className='ff-m-plus-1-regular text-gray text-base/5.5'>Your data and funds will be securely protected.</h6>
             </div>
         </div>
     )
