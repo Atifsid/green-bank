@@ -6,10 +6,6 @@ body {
     margin: 0 !important;
 }
 
-.header {
-    color: var(--color-white) !important;
-}
-
 .ff-m-plus-1-bold {
     font-family: 'M PLUS 1 Bold', sans-serif;
 }
