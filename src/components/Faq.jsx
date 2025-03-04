@@ -48,7 +48,7 @@ function Faq({ faqs = FAQs }) {
     };
 
     return (
-        <section className='my-32 flex justify-center px-6 lg:px-2'>
+        <section className='mt-32 flex justify-center px-6 lg:px-2'>
             <div className='lg:w-[50%]'>
                 <h6 className='ff-m-plus-1-bold text-white text-center text-[20px] lg:text-[40px] mb-16'>FAQs</h6>
                 <div className='flex flex-col gap-6'>
@@ -72,7 +72,7 @@ const FAQItem = ({ faq, isExpanded, toggle }) => {
     return (
         <div className="border-b-1 border-white cursor-pointer pb-4" onClick={toggle}>
             <div className="flex justify-between items-center gap-2">
-                <h6 className="text-white ff-m-plus-1-bold text-base lg:text-2xl">{faq.q}</h6>
+                <h6 className="text-white ff-poppins-bold text-base lg:text-2xl">{faq.q}</h6>
                 <img
                     src={isExpanded ? minus : plus}
                     alt={isExpanded ? "minus" : "plus"}
@@ -85,7 +85,7 @@ const FAQItem = ({ faq, isExpanded, toggle }) => {
                 className="overflow-hidden transition-[height] duration-500 ease-in-out"
                 style={{ height: isExpanded ? contentRef.current?.scrollHeight : 0 }}
             >
-                <p className="text-gray ff-m-plus-1-regular text-sm lg:text-base">{faq.a}</p>
+                <p className="text-gray ff-poppins-regular text-sm lg:text-base">{faq.a}</p>
             </div>
         </div>
     );
