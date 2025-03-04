@@ -59,10 +59,10 @@ function Footer() {
                             </div>
                             <div className='grid lg:grid-cols-4 grid-cols-2 gap-8 text-white'>
                                 {FOOTER_DATA.map((item, idx) => (
-                                    <ul className='text-white text-base ff-m-plus-1-bold'>
+                                    <ul key={`${item.heading}-${idx}`} className='text-white text-base ff-m-plus-1-bold'>
                                         <li className='pb-4'>{item.heading}</li>
                                         {item.list.map((subItem, subIdx) => (
-                                            <li className='text-gray text-base ff-m-plus-1-regular pb-2 last:pb-0'>{subItem}</li>
+                                            <li key={`${item.heading}-${subItem}-${subIdx}`} className='text-gray text-base ff-m-plus-1-regular pb-2 last:pb-0'>{subItem}</li>
                                         ))}
                                     </ul>
                                 ))}
