@@ -1,5 +1,5 @@
 import Faq from "./components/Faq"
-import Footer from "./components/footer"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Process from "./components/Process"
