@@ -1,4 +1,5 @@
 import Faq from "./components/Faq"
+import Footer from "./components/footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Process from "./components/Process"
@@ -17,6 +18,7 @@ function App() {
       <Process />
       <Testimonial />
       <Faq />
+      <Footer />
     </main>
   )
 }
