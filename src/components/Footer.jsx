@@ -69,7 +69,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className='flex lg:flex-row flex-col gap-2 justify-between items-center mt-10 lg:mt-20'>
+                        <div id='contact' className='flex lg:flex-row flex-col gap-2 justify-between items-center mt-10 lg:mt-20 scroll-mt-header-height'>
                             <h6 className='ff-m-plus-1-regular text-gray text-[12px] order 1'>copyright 2023 DoraDesign All Rights Reserved</h6>
                             <h6 className='ff-m-plus-1-regular text-gray text-[12px] order-3 lg:order-2'>
                                 <a

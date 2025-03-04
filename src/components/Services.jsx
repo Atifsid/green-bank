@@ -5,7 +5,7 @@ import analytics from '/analytics.svg'
 
 function Services() {
     return (
-        <section className='mt-32 flex justify-center px-6 lg:px-2'>
+        <section id='services' className='mt-32 flex justify-center px-6 lg:px-2 scroll-mt-header-height'>
             <div className='w-6xl'>
                 <h6 className='ff-m-plus-1-bold text-white text-center text-[40px]'>What do we offer?</h6>
                 <div className='mt-16 grid grid-cols-1 lg:flex justify-center gap-8'>

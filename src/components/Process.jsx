@@ -5,7 +5,7 @@ import CreditCard from './CreditCard';
 
 function Process() {
     return (
-        <section className='mt-24 lg:mt-32 flex justify-center px-8 lg:px-6'>
+        <section id='process' className='mt-24 lg:mt-32 flex justify-center px-8 lg:px-6 scroll-mt-header-height'>
             <div className='w-6xl'>
                 <div className='flex lg:flex-row flex-col justify-between items-center'>
                     <div className='w-[80%] lg:w-[50%] order-2 lg:order-1 lg:mt-8'>

@@ -36,7 +36,7 @@ function Testimonial() {
     }, []);
 
     return (
-        <div className="mt-32 w-full max-w-6xl mx-auto px-4 md:px-6">
+        <section id='payment' className="mt-32 w-full max-w-6xl mx-auto px-4 md:px-6 scroll-mt-header-height">
             <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_10px,_black_calc(100%-10px),transparent_100%)]">
                 <ul
                     ref={testimonialRef}
@@ -54,7 +54,7 @@ function Testimonial() {
                     ))}
                 </ul>
             </div>
-        </div>
+        </section>
     )
 }
 

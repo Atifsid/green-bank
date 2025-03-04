@@ -6,37 +6,39 @@ function Header() {
 
     const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
+    const hideMenu = () => setMenuOpen(false);
+
     return (
         <header className='sticky top-0 text-white py-[32px] z-50 bg-bg'>
             <div className='flex justify-center'>
                 <div className='absolute right-[32%] top-[-280%] h-[400px] w-[400px] bg-primary rounded-full blur-[280px]'></div>
-                <nav className='flex items-center justify-between w-6xl px-6'>
-                    <div className="flex items-center cursor-pointer">
+                <nav className='flex items-center justify-between w-6xl px-6 z-10'>
+                    <a href='#home' className="flex items-center cursor-pointer">
                         <img src={logo} alt="logo" height={24} width={24} />
                         <h1 className='pl-[12px] ff-m-plus-1-bold'>GreenBank</h1>
-                    </div>
+                    </a>
 
                     <ul className="gap-[32px] hidden lg:flex">
                         <li className='cursor-pointer'>
-                            <h1 className='text-base ff-m-plus-1-medium'>Why Us</h1>
+                            <a href='#why-us' className='text-base ff-m-plus-1-medium'>Why Us</a>
                         </li>
                         <li className='cursor-pointer'>
-                            <h1 className='text-base ff-m-plus-1-medium'>Services</h1>
+                            <a href='#services' className='text-base ff-m-plus-1-medium'>Services</a>
                         </li>
                         <li className='cursor-pointer'>
-                            <h1 className='text-base ff-m-plus-1-medium'>Our Process</h1>
+                            <a href='#process' className='text-base ff-m-plus-1-medium'>Our Process</a>
                         </li>
                         <li className='cursor-pointer'>
-                            <h1 className='text-base ff-m-plus-1-medium'>Payments</h1>
+                            <a href='#payment' className='text-base ff-m-plus-1-medium'>Payments</a>
                         </li>
                         <li className='cursor-pointer'>
-                            <h1 className='text-base ff-m-plus-1-medium'>FAQs</h1>
+                            <a href='#faqs' className='text-base ff-m-plus-1-medium'>FAQs</a>
                         </li>
                     </ul>
 
-                    <button className='cursor-pointer border border-primary px-[32px] py-[12px] text-primary rounded-full hidden lg:block'>
+                    <a href='#contact' className='cursor-pointer border border-primary px-[32px] py-[12px] text-primary rounded-full hidden lg:block'>
                         <h1 className='ff-m-plus-1-bold text-base'>Contact</h1>
-                    </button>
+                    </a>
 
                     <button className="lg:hidden relative w-[24px] h-[24px] flex items-center justify-center" onClick={toggleMenu}>
                         <span className={`absolute transition-opacity transform duration-300 ${isMenuOpen ? "opacity-0 scale-50" : "opacity-100 scale-100"}`}>
@@ -53,35 +55,38 @@ function Header() {
                             </svg>
                         </span>
                     </button>
-
                 </nav>
             </div>
 
             <nav className={`absolute top-[88px] backdrop-blur-3xl w-full py-7 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? "max-h-[500px] opacity-100 border-y-1 border-gray-400" : "max-h-0 opacity-0"}`}>
 
                 <ul className='flex flex-col justify-center gap-4 text-center'>
-                    <li className='cursor-pointer'>
-                        <h1 className='text-base ff-m-plus-1-medium'>Why Us</h1>
+                    <li className='cursor-pointer' onClick={hideMenu}>
+                        <a href='#why-us' className='text-base ff-m-plus-1-medium'>Why Us</a>
                     </li>
-                    <li className='cursor-pointer'>
-                        <h1 className='text-base ff-m-plus-1-medium'>Services</h1>
+                    <li className='cursor-pointer' onClick={hideMenu}>
+                        <a href='#services' className='text-base ff-m-plus-1-medium'>Services</a>
                     </li>
-                    <li className='cursor-pointer'>
-                        <h1 className='text-base ff-m-plus-1-medium'>Our Process</h1>
+                    <li className='cursor-pointer' onClick={hideMenu}>
+                        <a href='#process' className='text-base ff-m-plus-1-medium'>Our Process</a>
                     </li>
-                    <li className='cursor-pointer'>
-                        <h1 className='text-base ff-m-plus-1-medium'>Payments</h1>
+                    <li className='cursor-pointer' onClick={hideMenu}>
+                        <a href='#payment' className='text-base ff-m-plus-1-medium'>Payments</a>
                     </li>
-                    <li className='cursor-pointer'>
-                        <h1 className='text-base ff-m-plus-1-medium'>FAQs</h1>
+                    <li className='cursor-pointer' onClick={hideMenu}>
+                        <a href='#faqs' className='text-base ff-m-plus-1-medium'>FAQs</a>
                     </li>
-                    <li>
+                    <li onClick={() => {
+                        hideMenu();
+                        document.getElementById('contact').scrollIntoView();
+                    }}>
                         <button className='cursor-pointer border border-primary px-[32px] py-[12px] text-primary rounded-full'>
                             <h1 className='ff-m-plus-1-bold text-base'>Contact</h1>
                         </button>
                     </li>
                     <li className='mt-10'>
                         <a
+                            onClick={hideMenu}
                             className='cursor-pointer underline underline-offset-2'
                             href="https://github.com/Atifsid/green-bank"
                             target='_blank'
@@ -92,6 +97,7 @@ function Header() {
                         </a>
                         <span className='px-2'>|</span>
                         <a
+                            onClick={hideMenu}
                             className='cursor-pointer underline underline-offset-2'
                             href="https://www.figma.com/community/file/1264977779509133188/greenbank-credit-card-banking-landing-page-freebies-by-itsrehanraihan"
                             target='_blank'

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "./styles/theme.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-bg);
     margin: 0 !important;

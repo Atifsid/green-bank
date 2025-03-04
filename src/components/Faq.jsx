@@ -48,7 +48,7 @@ function Faq({ faqs = FAQs }) {
     };
 
     return (
-        <section className='mt-32 flex justify-center px-6 lg:px-2'>
+        <section id='faqs' className='mt-32 flex justify-center px-6 lg:px-2 scroll-mt-header-height'>
             <div className='lg:w-[50%]'>
                 <h6 className='ff-m-plus-1-bold text-white text-center text-[20px] lg:text-[40px] mb-16'>FAQs</h6>
                 <div className='flex flex-col gap-6'>

@@ -3,7 +3,7 @@ import LogoSection from './ui/LogoSection'
 
 function Record() {
   return (
-    <section className='mb-32'>
+    <section id='why-us' className='mb-32 scroll-mt-header-height'>
       <div className='flex justify-center px-6 lg:px-2'>
         <div className='lg:flex grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center md:gap-24 max-md:gap-10 w-6xl bg-[#3D544D3D] p-16 rounded-4xl'>
           <IndividualRecord p1={'16y'} p2={'Experience'} />

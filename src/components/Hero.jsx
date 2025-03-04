@@ -6,7 +6,7 @@ import Button from './ui/Button';
 
 function Hero() {
     return (
-        <section className='h-[calc(100vh-114px)]'>
+        <section id="home" className='h-[calc(100vh-114px)] scroll-mt-header-height'>
             <div className='flex justify-center h-full'>
                 <div className='flex items-center justify-center lg:justify-between w-6xl px-6 relative'>
                     <div className='z-10'>
